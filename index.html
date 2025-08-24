@@ -8,60 +8,63 @@
     <link rel="stylesheet" href="assets/styles/output.css" />
   </head>
   <body>
-    <header class="relative container mx-auto">
+    <!-- Header -->
+    <header class="container mx-auto relative">
       <div
-        class="flex items-center justify-between py-6 px-2 absolute w-full bg-transparent z-10 xl:px-6 sm:px-0"
+        class="absolute flex items-center justify-between w-full py-6 px-2 sm:px-0 xl:px-6 bg-transparent z-10"
       >
         <div>
           <a
             href=""
-            class="mardon text-xl text-white md:text-2xl lg:text-3xl"
+            class="mardon text-xl md:text-2xl lg:text-3xl text-white"
             id="logo"
             >fluxon</a
           >
         </div>
-        <nav class="items-center gap-5 hidden sm:flex">
+        <nav class="hidden sm:flex items-center gap-5">
           <a
             href=""
-            class="corpoa text-white text-xs md:text-sm lg:text-md hover:text-orange-400 transition-all uppercase"
+            class="corpoa text-xs md:text-sm lg:text-md text-white uppercase hover:text-orange-400 transition-all"
             >home</a
           >
           <a
             href=""
-            class="corpoa text-white text-xs md:text-sm lg:text-md hover:text-orange-400 transition-all uppercase"
+            class="corpoa text-xs md:text-sm lg:text-md text-white uppercase hover:text-orange-400 transition-all"
             >about us</a
           >
           <a
             href=""
-            class="corpoa text-white text-xs md:text-sm lg:text-md hover:text-orange-400 transition-all uppercase"
+            class="corpoa text-xs md:text-sm lg:text-md text-white uppercase hover:text-orange-400 transition-all"
             >serivces</a
           >
           <a
             href=""
-            class="corpoa text-white text-xs md:text-sm lg:text-md hover:text-orange-400 transition-all uppercase"
+            class="corpoa text-xs md:text-sm lg:text-md text-white uppercase hover:text-orange-400 transition-all"
             >contact us</a
           >
         </nav>
       </div>
     </header>
+
     <main>
+      <!-- Hero -->
       <section class="relative flex items-center justify-center" id="hero">
         <video
-          class="h-screen w-full object-cover brightness-50"
+          class="w-full h-screen object-cover brightness-50"
           src="assets/videos/5607784-uhd_3840_2160_30fps.mp4"
           autoplay
         ></video>
-        <div class="container mx-auto flex w-full sm:w-4/6 h-full absolute">
-          <div class="flex flex-col justify-center items-center gap-10">
+        <div class="container mx-auto absolute flex w-full sm:w-4/6 h-full">
+          <div class="flex flex-col items-center justify-center gap-10">
             <div class="flex flex-col items-center gap-1 sm:gap-6">
               <h1
-                class="corpoa text-center text-3xl px-2 xs:text-4xl xs:px-0 md:text-[3rem] xl:text-[4rem] lh1 text-white"
+                class="corpoa lh1 px-2 xs:px-0 text-center text-3xl xs:text-4xl md:text-[3rem] xl:text-[4rem] text-white"
               >
                 Lorem ipsum, dolor sit ameti consectetur adipisicing elit.
                 Ullam, repellat!
               </h1>
               <p
-                class="text-center text-slate-200 lhp w-[80%] text-xs hidden sm:block sm:text-[1rem] md:text-sm"
+                class="lhp hidden sm:block w-[80%] text-center text-xs sm:text-[1rem] md:text-sm text-slate-200"
               >
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab
                 natus, id amet perferendis in cum libero possimus rem eos enim!
@@ -70,14 +73,14 @@
             <div class="flex items-center gap-4 sm:gap-5">
               <button>
                 <a
-                  class="text-xs font-semibold text-slate-100 bg-orange-500 items-center py-3 px-5 uppercase rounded-sm hover:bg-orange-400 sm:py-4 sm:text-sm sm:px-6"
+                  class="uppercase font-semibold text-xs sm:text-sm text-slate-100 bg-orange-500 hover:bg-orange-400 rounded-sm py-3 px-5 sm:py-4 sm:px-6"
                   href=""
                   >our oFfers</a
                 >
               </button>
               <button>
                 <a
-                  class="text-xs font-semibold text-orange-400 border-2 border-orange-500 bg-transparent items-center py-2.5 px-4.5 uppercase rounded-sm hover:bg-orange-500 hover:text-white sm:py-3.5 sm:text-sm sm:px-5"
+                  class="uppercase font-semibold text-xs sm:text-sm text-orange-400 border-2 border-orange-500 bg-transparent hover:bg-orange-500 hover:text-white rounded-sm py-2.5 px-4.5 sm:py-3.5 sm:px-5"
                   href=""
                   >read more</a
                 >
@@ -86,11 +89,13 @@
           </div>
         </div>
       </section>
+
+      <!-- Banner -->
       <div class="bg-orange-500">
         <ul
-          class="container mx-auto py-6 w-full flex justify-between items-center capitalize px-4 xs:px-0 xl:px-6"
+          class="container mx-auto flex items-center justify-between w-full py-6 px-4 xs:px-0 xl:px-6 capitalize"
         >
-          <li class="text-nowrap text-white font-bold text-sm md:text-lg">
+          <li class="text-sm md:text-lg font-bold text-white text-nowrap">
             distinctio voluptas
           </li>
           <img
@@ -98,50 +103,52 @@
             src="assets/icons/icons8-star-64.png"
             alt=""
           />
-          <li class="text-nowrap text-white font-bold text-sm md:text-lg">
+          <li class="text-sm md:text-lg font-bold text-white text-nowrap">
             elit. Unde, cumque!
           </li>
           <img
-            class="w-4 hidden xs:block md:w-6"
+            class="hidden xs:block w-4 md:w-6"
             src="assets/icons/icons8-star-64.png"
             alt=""
           />
           <li
-            class="text-nowrap text-white font-bold text-sm hidden xs:block md:text-lg"
+            class="hidden xs:block text-sm md:text-lg font-bold text-white text-nowrap"
           >
             Lorem ipsum dolo
           </li>
           <img
-            class="w-4 hidden lg:block md:w-6"
+            class="hidden lg:block w-4 md:w-6"
             src="assets/icons/icons8-star-64.png"
             alt=""
           />
           <li
-            class="text-nowrap text-white font-bold hidden text-sm md:text-lg lg:block"
+            class="hidden lg:block text-sm md:text-lg font-bold text-white text-nowrap"
           >
             sit amet consectetur
           </li>
           <img
-            class="w-4 hidden lg:block md:w-6"
+            class="hidden lg:block w-4 md:w-6"
             src="assets/icons/icons8-star-64.png"
             alt=""
           />
           <li
-            class="text-nowrap text-sm text-white font-bold hidden lg:block lg:text-lg"
+            class="hidden lg:block text-sm lg:text-lg font-bold text-white text-nowrap"
           >
             doloradipisicing
           </li>
         </ul>
       </div>
+
+      <!-- Services -->
       <section class="bg-black" id="services">
         <div class="container mx-auto xl:px-6">
           <h1
-            class="text-3xl text-center font-extrabold pt-20 pb-5 capitalize text-white sm:text-4xl xl:text-5xl"
+            class="text-3xl sm:text-4xl xl:text-5xl text-center font-extrabold pt-20 pb-5 capitalize text-white"
           >
             why choose us ?
           </h1>
           <div
-            class="grid place-items-center grid-cols-1 lg:justify-start lg:grid-cols-2 text-white"
+            class="grid grid-cols-1 lg:grid-cols-2 lg:justify-start place-items-center text-white"
           >
             <div class="w-[320px] xs:w-[400px] sm:w-[500px] xl:w-[600px]">
               <img
@@ -151,17 +158,17 @@
               />
             </div>
             <div
-              class="flex flex-col justify-self-start gap-4 px-4 xs:px-0 sm:gap-2 xl:gap-6"
+              class="flex flex-col justify-self-start gap-4 sm:gap-2 xl:gap-6 px-4 xs:px-0"
             >
               <div class="flex flex-col gap-0.5 sm:mt-2 lg:mt-5 xl:mt-10">
                 <h2
-                  class="font-bold text-2xl sm:text-4xl lg:text-[2rem] lg:leading-[2.2rem] xl:text-[2.5rem] xl:leading-[2.7rem] capitalize"
+                  class="capitalize font-bold text-2xl sm:text-4xl lg:text-[2rem] lg:leading-[2.2rem] xl:text-[2.5rem] xl:leading-[2.7rem]"
                 >
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Expedita, illo.
                 </h2>
                 <p
-                  class="text-gray-400 xs:text-[0.5rem] text-[0.6rem] xl:text-xs leading-[cacl(1.5*0.75rem)]"
+                  class="text-[0.6rem] xs:text-[0.5rem] xl:text-xs text-gray-400 leading-[cacl(1.5*0.75rem)]"
                 >
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Molestiae veritatis consequuntur, dolorem modi dicta tempora
@@ -172,118 +179,112 @@
                 </p>
               </div>
               <ul class="flex flex-col gap-2 xl:gap-4">
-                <!-- Custom Web Design -->
                 <li class="border-b border-amber-500 pb-1 rounded">
                   <div class="flex items-center justify-between w-full">
                     <div class="flex items-center gap-3">
                       <img
+                        class="w-6 h-6"
                         src="assets/icons/icons8-web-design-30.png"
                         alt="Web Design Icon"
-                        class="w-6 h-6"
                       />
                       <p class="text-gray-300">Custom Web Design</p>
                     </div>
-
                     <div class="flex items-center space-x-2">
-                      <button class="text-sm text-orange-400 hidden xs:block">
+                      <button class="hidden xs:block text-sm text-orange-400">
                         Learn more
                       </button>
                       <img
+                        class="w-4 h-4"
                         src="assets/icons/icons8-arrow-30.png"
                         alt="arrow"
-                        class="w-4 h-4"
                       />
                     </div>
                   </div>
                 </li>
-                <!-- Responsive Development -->
                 <li class="border-b border-amber-500 pb-1 rounded">
                   <div class="flex items-center justify-between w-full">
                     <div class="flex items-center space-x-3">
                       <img
+                        class="w-6 h-6"
                         src="assets/icons/icons8-responsive-30.png"
                         alt="Web Development Icon"
-                        class="w-6 h-6"
                       />
                       <p class="text-gray-300">Responsive Development</p>
                     </div>
                     <div class="flex items-center space-x-2">
-                      <button class="text-sm text-orange-400 hidden xs:block">
+                      <button class="hidden xs:block text-sm text-orange-400">
                         Learn more
                       </button>
                       <img
+                        class="w-4 h-4"
                         src="assets/icons/icons8-arrow-30.png"
                         alt="arrow"
-                        class="w-4 h-4"
                       />
                     </div>
                   </div>
                 </li>
-                <!-- E-commerce Websites -->
                 <li class="border-b border-amber-500 pb-1 rounded">
                   <div class="flex items-center justify-between w-full">
                     <div class="flex items-center space-x-3">
                       <img
+                        class="w-6 h-6"
                         src="assets/icons/icons8-e-commerce-30.png"
                         alt="E-commerce Icon"
-                        class="w-6 h-6"
                       />
                       <p class="text-gray-300">E-commerce Websites</p>
                     </div>
                     <div class="flex items-center space-x-2">
-                      <button class="text-sm text-orange-400 hidden xs:block">
+                      <button class="hidden xs:block text-sm text-orange-400">
                         Learn more
                       </button>
                       <img
+                        class="w-4 h-4"
                         src="assets/icons/icons8-arrow-30.png"
                         alt="arrow"
-                        class="w-4 h-4"
                       />
                     </div>
                   </div>
                 </li>
-                <!-- Web Applications -->
                 <li class="border-b border-amber-500 pb-1 rounded">
                   <div class="flex items-center justify-between w-full">
                     <div class="flex items-center space-x-3">
                       <img
+                        class="w-6 h-6"
                         src="assets/icons/icons8-application-30.png"
                         alt="Web App Icon"
-                        class="w-6 h-6"
                       />
                       <p class="text-gray-300">Web Applications</p>
                     </div>
                     <div class="flex items-center space-x-2">
-                      <button class="text-sm text-orange-400 hidden xs:block">
+                      <button class="hidden xs:block text-sm text-orange-400">
                         Learn more
                       </button>
                       <img
+                        class="w-4 h-4"
                         src="assets/icons/icons8-arrow-30.png"
                         alt="arrow"
-                        class="w-4 h-4"
                       />
                     </div>
                   </div>
                 </li>
-                <!-- Maintenance & Updates -->
                 <li class="border-b border-amber-500 pb-1 rounded">
                   <div class="flex items-center justify-between w-full">
                     <div class="flex items-center space-x-3">
                       <img
+                        class="w-6 h-6"
                         src="assets/icons/icons8-computer-support-30.png"
                         alt="Support Icon"
-                        class="w-6 h-6"
                       />
                       <p class="text-gray-300">Maintenance & Updates</p>
                     </div>
                     <div class="flex items-center space-x-2">
-                      <button class="text-sm text-orange-400 hidden xs:block">
+                      <button class="hidden xs:block text-sm text-orange-400">
                         Learn more
                       </button>
                       <img
+                        class="w-4 h-4"
                         src="assets/icons/icons8-arrow-30.png"
                         alt="arrow"
-                        class="w-4 h-4"
                       />
                     </div>
                   </div>
@@ -293,32 +294,34 @@
           </div>
         </div>
       </section>
+
+      <!-- About Us -->
       <section class="bg-black" id="about-us">
         <div class="container mx-auto">
           <h1
-            class="text-3xl text-center font-extrabold pt-20 pb-5 capitalize text-white sm:text-4xl xl:text-5xl"
+            class="text-3xl sm:text-4xl xl:text-5xl text-center font-extrabold pt-20 pb-5 capitalize text-white"
           >
             wanna meet the team ?
           </h1>
           <div
-            class="grid md:grid-cols-1 xl:grid-cols-[3.2fr_1fr_1fr] gap-5 xl:gap-5 md:px-8 md:py-15 text-white bg-transparent md:bg-gradient-to-b from-gray-950 to-gray-800 rounded-[50px]"
+            class="grid md:grid-cols-1 xl:grid-cols-[3.2fr_1fr_1fr] gap-5 xl:gap-5 md:px-8 md:py-15 bg-transparent md:bg-gradient-to-b from-gray-950 to-gray-800 text-white rounded-[50px]"
           >
             <div class="flex flex-col gap-10">
               <div class="flex flex-col gap-4 px-2 sm:px-0">
                 <h2
-                  class="text-3xl xs:text-4xl lg:text-5xl font-[800] tracking-wider leading-[2.5rem] lg:leading-[3.5rem] self-start corpoa capitalize"
+                  class="corpoa capitalize self-start text-3xl xs:text-4xl lg:text-5xl font-[800] tracking-wider leading-[2.5rem] lg:leading-[3.5rem]"
                 >
                   <span
-                    class="text-3xl xs:text-4xl lg:text-5xl font-[800] tracking-wider leading-[2.5rem] lg:leading-[3.5rem] corpoa capitalize lg:text-nowrap"
+                    class="corpoa capitalize text-3xl xs:text-4xl lg:text-5xl font-[800] tracking-wider leading-[2.5rem] lg:leading-[3.5rem] lg:text-nowrap"
                     >Lorem ipsum,amet likoos
                   </span>
                   <span
-                    class="text-4xl xs:text-5xl bg-gradient-to-br xl:leading-[3.2rem] from-orange-400 to-orange-800 bg-clip-text text-transparent tracking-wider leading-[2.5rem] corpoa capitalize"
+                    class="corpoa capitalize text-4xl xs:text-5xl bg-gradient-to-br from-orange-400 to-orange-800 bg-clip-text text-transparent tracking-wider leading-[2.5rem] xl:leading-[3.2rem]"
                     >consectetur</span
                   >
                   adipisi elit. Nesciunt, quam.
                 </h2>
-                <p class="text-[0.6rem] xs:text-xs text-gray-300 w-[95%]">
+                <p class="w-[95%] text-[0.6rem] xs:text-xs text-gray-300">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Accusantium modi, illum aliquam, asperiores quisquam nihil
                   animi voluptatum vero nisi molestiae obcaecati ut molestias,
@@ -332,10 +335,10 @@
                 </p>
               </div>
               <ul
-                class="flex items-center mt-auto justify-around lg:gap-9 xl:justify-start"
+                class="flex items-center justify-around xl:justify-start mt-auto lg:gap-9"
               >
                 <li
-                  class="flex flex-col items-center justify-center bg-gradient-to-b from-orange-400 to-orange-700 w-[100px] h-[100px] rounded-xl text-nowrap"
+                  class="flex flex-col items-center justify-center w-[100px] h-[100px] bg-gradient-to-b from-orange-400 to-orange-700 rounded-xl text-nowrap"
                 >
                   <span class="text-3xl font-bold">+10</span>
                   <div class="text-xs text-gray-200 capitalize">
@@ -343,7 +346,7 @@
                   </div>
                 </li>
                 <li
-                  class="flex flex-col items-center justify-center bg-gradient-to-b from-orange-400 to-orange-700 w-[100px] h-[100px] rounded-xl text-nowrap"
+                  class="flex flex-col items-center justify-center w-[100px] h-[100px] bg-gradient-to-b from-orange-400 to-orange-700 rounded-xl text-nowrap"
                 >
                   <span class="text-3xl font-bold">+25</span>
                   <div class="text-xs text-gray-200 capitalize">
@@ -351,27 +354,27 @@
                   </div>
                 </li>
                 <li
-                  class="flex flex-col items-center justify-center bg-gradient-to-b from-orange-400 to-orange-700 w-[100px] h-[100px] rounded-xl text-nowrap"
+                  class="flex flex-col items-center justify-center w-[100px] h-[100px] bg-gradient-to-b from-orange-400 to-orange-700 rounded-xl text-nowrap"
                 >
                   <span class="text-3xl font-bold">+19</span>
                   <div class="text-xs text-gray-200 capitalize">expert</div>
                 </li>
                 <li
-                  class="flex-col items-center justify-center bg-gradient-to-b from-orange-400 to-orange-700 w-[100px] h-[100px] rounded-xl text-nowrap hidden sm:flex"
+                  class="hidden sm:flex flex-col items-center justify-center w-[100px] h-[100px] bg-gradient-to-b from-orange-400 to-orange-700 rounded-xl text-nowrap"
                 >
                   <span class="text-3xl font-bold">+30</span>
                   <div class="text-xs text-gray-200 capitalize">projects</div>
                 </li>
                 <li
-                  class="flex-col items-center justify-center bg-gradient-to-b from-orange-400 to-orange-700 w-[100px] h-[100px] rounded-xl text-nowrap hidden sm:flex"
+                  class="hidden sm:flex flex-col items-center justify-center w-[100px] h-[100px] bg-gradient-to-b from-orange-400 to-orange-700 rounded-xl text-nowrap"
                 >
                   <span class="text-3xl font-bold">+5</span>
                   <div class="text-xs text-gray-200 capitalize">reviews</div>
                 </li>
               </ul>
             </div>
-            <div class="px-2 sm:px-0 xl:w-[320px] w-full xl:h-full flex">
-              <div class="h-full w-full rounded-xl overflow-hidden">
+            <div class="flex px-2 sm:px-0 w-full xl:w-[320px] xl:h-full">
+              <div class="w-full h-full overflow-hidden rounded-xl">
                 <img
                   class="w-full h-full object-cover grayscale-75 hover:grayscale-[20%] transition-all duration-500"
                   src="assets/images/People Working in Office Illustration.jpeg"
@@ -379,14 +382,13 @@
                 />
               </div>
             </div>
-
             <div
               class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-1 gap-5 md:gap-10 px-2 sm:px-0"
             >
               <div
                 class="flex flex-col justify-center gap-2 p-6 bg-gradient-to-br from-orange-400 to-orange-900 rounded-2xl"
               >
-                <p class="text-gray-100 text-sm leading-[1.2rem]">
+                <p class="text-sm leading-[1.2rem] text-gray-100">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,
                   enim. Laudantium aperiam ullam qui quisquam.
                 </p>
@@ -396,7 +398,7 @@
                   >
                   <button class="w-[70px]">
                     <img
-                      class="cursor-pointer w-full"
+                      class="w-full cursor-pointer"
                       src="assets/icons/icons8-arrow-50.png"
                       alt=""
                     />
@@ -406,7 +408,7 @@
               <div
                 class="flex flex-col justify-center self-end gap-2 p-6 bg-gradient-to-br from-orange-400 to-orange-900 rounded-2xl"
               >
-                <p class="text-gray-100 text-sm leading-[1.2rem]">
+                <p class="text-sm leading-[1.2rem] text-gray-100">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Totam, deleniti sint! Molestias doloremque dolorem laudantium!
                 </p>
@@ -414,6 +416,7 @@
                   <span class="text-xl font-extrabold capitalize"
                     >meet our experts</span
                   >
+
                   <button class="w-[80px]">
                     <img
                       class="cursor-pointer w-full"
