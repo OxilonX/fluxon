@@ -5,6 +5,9 @@
 * {
   font-family: "davigo";
 }
+button {
+  cursor: pointer;
+}
 .lh1 {
   line-height: 3.5rem;
   @media (max-width: 875px) {
