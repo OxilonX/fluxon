@@ -351,6 +351,9 @@
   .w-\[400px\] {
     width: 400px;
   }
+  .w-auto {
+    width: auto;
+  }
   .w-fit {
     width: fit-content;
   }
@@ -365,6 +368,9 @@
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -490,6 +496,9 @@
   }
   .justify-self-stretch {
     justify-self: stretch;
+  }
+  .overflow-hidden {
+    overflow: hidden;
   }
   .rounded {
     border-radius: 0.25rem;
@@ -724,6 +733,10 @@
     --tw-leading: 1rem;
     line-height: 1rem;
   }
+  .leading-\[2\.2rem\] {
+    --tw-leading: 2.2rem;
+    line-height: 2.2rem;
+  }
   .leading-\[2\.5rem\] {
     --tw-leading: 2.5rem;
     line-height: 2.5rem;
@@ -735,6 +748,10 @@
   .leading-\[2\.50rem\] {
     --tw-leading: 2.50rem;
     line-height: 2.50rem;
+  }
+  .leading-\[2rem\] {
+    --tw-leading: 2rem;
+    line-height: 2rem;
   }
   .leading-\[3\.2rem\] {
     --tw-leading: 3.2rem;
@@ -946,6 +963,11 @@
       display: block;
     }
   }
+  .xs\:flex {
+    @media (width >= 400px) {
+      display: flex;
+    }
+  }
   .xs\:w-\[400px\] {
     @media (width >= 400px) {
       width: 400px;
@@ -956,10 +978,32 @@
       padding-inline: calc(var(--spacing) * 0);
     }
   }
+  .xs\:px-1 {
+    @media (width >= 400px) {
+      padding-inline: calc(var(--spacing) * 1);
+    }
+  }
+  .xs\:px-2 {
+    @media (width >= 400px) {
+      padding-inline: calc(var(--spacing) * 2);
+    }
+  }
   .xs\:text-4xl {
     @media (width >= 400px) {
       font-size: var(--text-4xl);
       line-height: var(--tw-leading, var(--text-4xl--line-height));
+    }
+  }
+  .xs\:text-5xl {
+    @media (width >= 400px) {
+      font-size: var(--text-5xl);
+      line-height: var(--tw-leading, var(--text-5xl--line-height));
+    }
+  }
+  .xs\:text-xs {
+    @media (width >= 400px) {
+      font-size: var(--text-xs);
+      line-height: var(--tw-leading, var(--text-xs--line-height));
     }
   }
   .xs\:text-\[0\.5rem\] {
@@ -990,6 +1034,11 @@
   .sm\:w-\[500px\] {
     @media (width >= 40rem) {
       width: 500px;
+    }
+  }
+  .sm\:justify-start {
+    @media (width >= 40rem) {
+      justify-content: flex-start;
     }
   }
   .sm\:gap-2 {
@@ -1054,6 +1103,47 @@
       width: calc(var(--spacing) * 6);
     }
   }
+  .md\:grid-cols-1 {
+    @media (width >= 48rem) {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+  }
+  .md\:grid-cols-2 {
+    @media (width >= 48rem) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .md\:grid-cols-\[1fr\] {
+    @media (width >= 48rem) {
+      grid-template-columns: 1fr;
+    }
+  }
+  .md\:grid-cols-\[1fr_1fr\] {
+    @media (width >= 48rem) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  .md\:grid-cols-\[3fr_1fr\] {
+    @media (width >= 48rem) {
+      grid-template-columns: 3fr 1fr;
+    }
+  }
+  .md\:justify-start {
+    @media (width >= 48rem) {
+      justify-content: flex-start;
+    }
+  }
+  .md\:gap-10 {
+    @media (width >= 48rem) {
+      gap: calc(var(--spacing) * 10);
+    }
+  }
+  .md\:bg-gradient-to-b {
+    @media (width >= 48rem) {
+      --tw-gradient-position: to bottom in oklab;
+      background-image: linear-gradient(var(--tw-gradient-stops));
+    }
+  }
   .md\:px-8 {
     @media (width >= 48rem) {
       padding-inline: calc(var(--spacing) * 8);
@@ -1107,9 +1197,39 @@
       display: block;
     }
   }
+  .lg\:flex {
+    @media (width >= 64rem) {
+      display: flex;
+    }
+  }
+  .lg\:w-\[300px\] {
+    @media (width >= 64rem) {
+      width: 300px;
+    }
+  }
+  .lg\:grid-cols-1 {
+    @media (width >= 64rem) {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+  }
   .lg\:grid-cols-2 {
     @media (width >= 64rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .lg\:grid-cols-\[1fr_1fr\] {
+    @media (width >= 64rem) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  .lg\:grid-cols-\[3fr_1fr\] {
+    @media (width >= 64rem) {
+      grid-template-columns: 3fr 1fr;
+    }
+  }
+  .lg\:justify-between {
+    @media (width >= 64rem) {
+      justify-content: space-between;
     }
   }
   .lg\:justify-start {
@@ -1117,10 +1237,26 @@
       justify-content: flex-start;
     }
   }
+  .lg\:gap-9 {
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 9);
+    }
+  }
+  .lg\:gap-10 {
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 10);
+    }
+  }
   .lg\:text-3xl {
     @media (width >= 64rem) {
       font-size: var(--text-3xl);
       line-height: var(--tw-leading, var(--text-3xl--line-height));
+    }
+  }
+  .lg\:text-5xl {
+    @media (width >= 64rem) {
+      font-size: var(--text-5xl);
+      line-height: var(--tw-leading, var(--text-5xl--line-height));
     }
   }
   .lg\:text-lg {
@@ -1140,9 +1276,40 @@
       line-height: 2.2rem;
     }
   }
+  .lg\:leading-\[3\.5rem\] {
+    @media (width >= 64rem) {
+      --tw-leading: 3.5rem;
+      line-height: 3.5rem;
+    }
+  }
+  .lg\:text-nowrap {
+    @media (width >= 64rem) {
+      text-wrap: nowrap;
+    }
+  }
   .xl\:mt-10 {
     @media (width >= 80rem) {
       margin-top: calc(var(--spacing) * 10);
+    }
+  }
+  .xl\:h-full {
+    @media (width >= 80rem) {
+      height: 100%;
+    }
+  }
+  .xl\:w-\[300px\] {
+    @media (width >= 80rem) {
+      width: 300px;
+    }
+  }
+  .xl\:w-\[320px\] {
+    @media (width >= 80rem) {
+      width: 320px;
+    }
+  }
+  .xl\:w-\[350px\] {
+    @media (width >= 80rem) {
+      width: 350px;
     }
   }
   .xl\:w-\[600px\] {
@@ -1150,9 +1317,34 @@
       width: 600px;
     }
   }
+  .xl\:w-full {
+    @media (width >= 80rem) {
+      width: 100%;
+    }
+  }
+  .xl\:grid-cols-1 {
+    @media (width >= 80rem) {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+  }
+  .xl\:grid-cols-\[3\.2fr_1fr_1fr\] {
+    @media (width >= 80rem) {
+      grid-template-columns: 3.2fr 1fr 1fr;
+    }
+  }
+  .xl\:justify-start {
+    @media (width >= 80rem) {
+      justify-content: flex-start;
+    }
+  }
   .xl\:gap-4 {
     @media (width >= 80rem) {
       gap: calc(var(--spacing) * 4);
+    }
+  }
+  .xl\:gap-5 {
+    @media (width >= 80rem) {
+      gap: calc(var(--spacing) * 5);
     }
   }
   .xl\:gap-6 {
@@ -1191,6 +1383,12 @@
     @media (width >= 80rem) {
       --tw-leading: 2.7rem;
       line-height: 2.7rem;
+    }
+  }
+  .xl\:leading-\[3\.2rem\] {
+    @media (width >= 80rem) {
+      --tw-leading: 3.2rem;
+      line-height: 3.2rem;
     }
   }
 }

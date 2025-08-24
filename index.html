@@ -301,24 +301,24 @@
             wanna meet the team ?
           </h1>
           <div
-            class="grid grid-cols-[3.2fr_1fr_1fr] gap-5 md:px-8 md:py-15 text-white bg-gradient-to-b from-gray-950 to-gray-800 rounded-[50px]"
+            class="grid md:grid-cols-1 xl:grid-cols-[3.2fr_1fr_1fr] gap-5 xl:gap-5 md:px-8 md:py-15 text-white bg-transparent md:bg-gradient-to-b from-gray-950 to-gray-800 rounded-[50px]"
           >
             <div class="flex flex-col gap-10">
-              <div class="flex flex-col gap-4">
+              <div class="flex flex-col gap-4 px-2 sm:px-0">
                 <h2
-                  class="text-5xl font-[800] tracking-wider leading-[3.5rem] self-start corpoa capitalize"
+                  class="text-3xl xs:text-4xl lg:text-5xl font-[800] tracking-wider leading-[2.5rem] lg:leading-[3.5rem] self-start corpoa capitalize"
                 >
                   <span
-                    class="text-5xl font-[800] tracking-wider leading-[3.5rem] corpoa capitalize text-nowrap"
+                    class="text-3xl xs:text-4xl lg:text-5xl font-[800] tracking-wider leading-[2.5rem] lg:leading-[3.5rem] corpoa capitalize lg:text-nowrap"
                     >Lorem ipsum,amet likoos
                   </span>
                   <span
-                    class="text-6xl bg-gradient-to-br leading-[3.2rem] from-orange-400 to-orange-800 bg-clip-text text-transparent tracking-wider leading-[2.5rem] corpoa capitalize"
+                    class="text-4xl xs:text-5xl bg-gradient-to-br xl:leading-[3.2rem] from-orange-400 to-orange-800 bg-clip-text text-transparent tracking-wider leading-[2.5rem] corpoa capitalize"
                     >consectetur</span
                   >
                   adipisi elit. Nesciunt, quam.
                 </h2>
-                <p class="text-xs text-gray-300 w-[95%]">
+                <p class="text-[0.6rem] xs:text-xs text-gray-300 w-[95%]">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Accusantium modi, illum aliquam, asperiores quisquam nihil
                   animi voluptatum vero nisi molestiae obcaecati ut molestias,
@@ -331,7 +331,9 @@
                   molestiae assumenda totam voluptatibus ex tempore suscipit in.
                 </p>
               </div>
-              <ul class="flex items-center justify-start mt-auto gap-9">
+              <ul
+                class="flex items-center mt-auto justify-around lg:gap-9 xl:justify-start"
+              >
                 <li
                   class="flex flex-col items-center justify-center bg-gradient-to-b from-orange-400 to-orange-700 w-[100px] h-[100px] rounded-xl text-nowrap"
                 >
@@ -355,28 +357,32 @@
                   <div class="text-xs text-gray-200 capitalize">expert</div>
                 </li>
                 <li
-                  class="flex flex-col items-center justify-center bg-gradient-to-b from-orange-400 to-orange-700 w-[100px] h-[100px] rounded-xl text-nowrap"
+                  class="flex-col items-center justify-center bg-gradient-to-b from-orange-400 to-orange-700 w-[100px] h-[100px] rounded-xl text-nowrap hidden sm:flex"
                 >
                   <span class="text-3xl font-bold">+30</span>
                   <div class="text-xs text-gray-200 capitalize">projects</div>
                 </li>
                 <li
-                  class="flex flex-col items-center justify-center bg-gradient-to-b from-orange-400 to-orange-700 w-[100px] h-[100px] rounded-xl text-nowrap"
+                  class="flex-col items-center justify-center bg-gradient-to-b from-orange-400 to-orange-700 w-[100px] h-[100px] rounded-xl text-nowrap hidden sm:flex"
                 >
                   <span class="text-3xl font-bold">+5</span>
                   <div class="text-xs text-gray-200 capitalize">reviews</div>
                 </li>
               </ul>
             </div>
-            <div class="w-[300px] h-full">
-              <img
-                class="w-full self-stretch object-cover rounded-xl grayscale-75 hover:grayscale-[20%] transition-all duration-500"
-                src="assets/images/People Working in Office Illustration.jpeg"
-                alt="People Working in Office Illustration"
-              />
+            <div class="px-2 sm:px-0 xl:w-[320px] w-full xl:h-full flex">
+              <div class="h-full w-full rounded-xl overflow-hidden">
+                <img
+                  class="w-full h-full object-cover grayscale-75 hover:grayscale-[20%] transition-all duration-500"
+                  src="assets/images/People Working in Office Illustration.jpeg"
+                  alt="People Working in Office Illustration"
+                />
+              </div>
             </div>
 
-            <div class="grid cols-1">
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-1 gap-5 md:gap-10 px-2 sm:px-0"
+            >
               <div
                 class="flex flex-col justify-center gap-2 p-6 bg-gradient-to-br from-orange-400 to-orange-900 rounded-2xl"
               >
@@ -421,9 +427,9 @@
           </div>
         </div>
       </section>
-      <section class="bg-black" id="reviews">
+      <!-- <section class="bg-black" id="reviews">
         <div class="container mx-auto"></div>
-      </section>
+      </section> -->
     </main>
   </body>
 </html>
