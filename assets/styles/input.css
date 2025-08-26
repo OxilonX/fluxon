@@ -8,6 +8,46 @@
 button {
   cursor: pointer;
 }
+#card {
+  background-color: #181818;
+}
+.plans-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.plans-item::before {
+  content: "";
+  position: absolute;
+  left: -13px;
+  top: 5px;
+  border-radius: 50px;
+  width: 7px;
+  height: 7px;
+  background-color: #ffa705e6;
+}
+/*
+.platinium-item::before {
+  content: "";
+  position: absolute;
+  left: -13px;
+  top: 5px;
+  border-radius: 50px;
+  width: 7px;
+  height: 7px;
+  background-color: #f54900;
+}*/
+/*
+.ruby-item::before {
+  content: "";
+  position: absolute;
+  left: -13px;
+  top: 5px;
+  border-radius: 50px;
+  width: 7px;
+  height: 7px;
+  background-color: #fb2c36;
+} */
 .lh1 {
   line-height: 3.5rem;
   @media (max-width: 875px) {
