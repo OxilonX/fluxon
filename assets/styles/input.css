@@ -11,6 +11,9 @@ button {
 #card {
   background-color: #181818;
 }
+#review-card {
+  background-color: #202020;
+}
 .plans-item {
   display: flex;
   align-items: center;
