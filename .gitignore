@@ -1,5 +1,16 @@
-assets/styles/output.css
+# dependencies
 node_modules/
+pnpm-lock.yaml
 package-lock.json
-package.json
-tailwind.config.js
+yarn.lock
+
+# build output
+dist/
+build/
+.next/
+out/
+.cache/
+
+# misc
+.env
+.DS_Store
